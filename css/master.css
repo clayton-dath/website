@@ -1,0 +1,291 @@
+
+/* Main */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  font-weight: 300;
+}
+
+.home_container_container {
+  overflow: hidden;
+}
+
+.home_container {
+  height: 650px;
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.home_container:before {
+    content:"";
+    background: -webkit-linear-gradient(20deg, rgba(255, 255, 255, .9) 24%, #084F6D calc(24% + 2px));
+    position: absolute;
+    height: 100%;
+    width: 3000px;
+    z-index: -1;
+}
+
+.home_text {
+  display: inline-block;
+  top: 200px;
+  left: 50px;
+  width: 580px;
+  position: absolute;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  padding: 40px;
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.home_image {
+  height: 600px;
+  position: absolute;
+  left: 800px;
+  bottom: 0;
+}
+
+.services_background {
+  background: #D7D7D7;
+}
+
+.services_container {
+  max-width: 1280px;
+  height: 550px;
+  margin: auto;
+}
+
+.service_blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service_block {
+  background: #FFF;
+  height: 350px;
+  width: 350px;
+  display: inline-table;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+.service_block:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.35);
+}
+
+.service_block h2 {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.service_svg {
+  display: block;
+  margin: auto;
+  height: 120px;
+}
+
+.experience_container {
+  max-width: 1280px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.experience_block {
+  display: flex;
+}
+
+.experience_project {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.experience_title {
+  font-weight: 500;
+}
+
+.experience_description {
+  width: 780px;
+  margin: auto;
+}
+
+ul {
+  margin-top: .5em;
+  margin-bottom: 2em;
+}
+
+.footer_background {
+  background: #202020;
+}
+
+.footer_container {
+  max-width: 1280px;
+  display: flex;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.about_me, .contact {
+  width: 600px;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.about_me p, .contact p {
+  font-weight: 500;
+  text-align: left;
+  font-size: 24px;
+}
+
+.about_me_detail {
+  margin-top: .5em;
+}
+
+input, textarea {
+  font-size: 20px;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  background: none;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"] {
+  border: 1px solid white;
+  padding: 7px 25px;
+}
+
+input[type="submit"]:hover {
+  transition: .5s;
+  border: 1px solid #202020;
+  background: white;
+  color: #202020;
+}
+
+input:focus, textarea:focus {
+  color: white;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input::placeholder, textarea::placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.home_contact {
+    display: flex;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+}
+
+.home_contact, .home_contact:before, .home_contact:after {
+    box-sizing: border-box;
+}
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+
+.icon-paperplane {
+    font-size: 1em;
+    color: $color3;
+    margin-left: 1px;
+    margin-top: 5px;
+}
+
+.contact-button {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    left: 0;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 15px 67px 15px 62px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-button span {
+    text-transform: none;
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    opacity: 0;
+    color: white;
+    font-weight: 300;
+    transition: all 0s ease 0s;
+}
+
+.contact-button:hover {
+    transition: 0.3s ease-in-out;
+    border: 2px solid #084F6D;
+    border-radius: 50px;
+    background-color: #084F6D;
+    color: #084F6D;
+}
+
+.contact-button:hover span {
+    opacity: 1;
+    transition: all 0.25s ease-in-out 0.1s;
+}
+
+.inspiration {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: lighten($color2, 25%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
